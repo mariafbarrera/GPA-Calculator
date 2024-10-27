@@ -1,0 +1,193 @@
+/* Apply color palette and enhanced styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #F3F3E0, #CBDCEB);
+}
+
+/* Container styling */
+.container {
+    width: 100%;
+    max-width: 600px;
+    padding: 25px;
+    background-color: #CBDCEB;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+    transition: transform 0.3s;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+/* Header styling */
+h1 {
+    color: #133E87;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Table header styling */
+th {
+    background: linear-gradient(135deg, #133E87, #608BC1);
+    color: #F3F3E0;
+    padding: 8px;
+}
+
+/* Table cell styling */
+td {
+    padding: 12px;
+    text-align: center;
+    transition: background-color 0.2s;
+}
+
+td:hover {
+    background-color: #E9F0F7;
+}
+
+/* Input styling */
+input[type="text"], input[type="number"], select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #608BC1;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #F3F3E0;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus, input[type="number"]:focus, select:focus {
+    border-color: #133E87;
+    outline: none;
+}
+
+input[type="text"]::placeholder {
+    color: #888; /* Placeholder text color */
+}
+
+/* Button styling */
+button {
+    padding: 12px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.2s;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Add Row Button */
+#add-row {
+    background-color: #608BC1;
+    color: #F3F3E0;
+    transition: background-color 0.3s;
+}
+
+#add-row:hover {
+    background-color: #133E87;
+}
+
+/* Calculate Button */
+#calculate-gpa {
+    background-color: #4CAF50;
+    color: white;
+    box-shadow: 0px 4px 10px rgba(76, 175, 80, 0.3);
+}
+
+#calculate-gpa:hover {
+    background-color: #45a049;
+}
+
+/* Reset Button */
+#reset {
+    background-color: #d9534f;
+    box-shadow: 0px 4px 10px rgba(217, 83, 79, 0.3);
+}
+
+#reset:hover {
+    background-color: #c9302c;
+}
+
+/* Delete row button */
+.remove-row {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 7px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.remove-row:hover {
+    background-color: darkred;
+}
+
+/* GPA output styling */
+#gpa-output {
+    margin-top: 25px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #133E87;
+    text-align: center;
+    padding: 10px;
+    background-color: #E9F0F7;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Actions button container */
+.actions {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+    .container {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.6em;
+    }
+
+    th, td {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    button {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    input[type="text"], input[type="number"], select {
+        padding: 8px;
+    }
+
+    #gpa-output {
+        font-size: 18px;
+    }
+}
